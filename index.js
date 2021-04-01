@@ -19,6 +19,6 @@ app.get('/', (req, res) => {
   res.send(`The server has been started`)
 });
 
-server.listen(3000, function() {
+server.listen(process.env.PORT, function() {
   console.log('The server has started');
 });
